@@ -1,4 +1,4 @@
-# Flascard App
+# Flashcard App
 
 > A simple interface that stores the information you need to remember
 
