@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Flashcards App</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="left">
+        <div class="arrow"></div>
+        <a class="home" href="#"><img src="./img/logo.svg" alt="logo"></a>
+        <button id="show-btn" class="btn">Add Card</button>
+        <div class="feedback">
+          Customer feedback
+        </div>
+        <form id="cardForm" class="card__form">
+          <div class="form__group">
+            <label for="question">Question</label>
+            <textarea id="question"></textarea>
+          </div>
+          <div class="form__group">
+            <label for="answer">Answer</label>
+            <textarea id="answer"></textarea>
+          </div>
+          <button type="submit" class="btn outline">Save</button>
+          <button type="button" id="close"><i class="far fa-window-close"></i></button>
+        </form>
+      </div>
+      <div class="right">
+        <nav>
+          <ul class="menu">
+            <li class="menu__link"><a href="#">Home</a></li>
+            <li class="menu__link"><a href="#">Cards</a></li>
+            <li class="menu__link"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="card__wrapper" id="questions-list">
+          <h2 class="card__header">Your Cards</h2>
+
+          <!-- <div class="card">
+            <h4 class="questionResult">How can I stack two elements under eachother only
+              on mobile using flexbox?</h4>
+            <a href="#" class="show__answer">Show / Hide answer</a>
+            <h4 class="answerResult">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque rem sit nesciunt
+              soluta, eos animi repellendus aperiam ex, neque inventore delectus porro maiores qui aliquid unde, cumque
+              alias totam sed!</h4>
+            <div class="flashcard__btn">
+              <button type="button" id="edit-flashcard" class="btn small edit-flashcard" data-id="">Edit</button>
+              <button type="button" id="delete-flashcard" class="btn small delete-flashcard" data-id="">Delete</button>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
